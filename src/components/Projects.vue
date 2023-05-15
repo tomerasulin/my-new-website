@@ -11,7 +11,6 @@
             </div>
             <nav>
                 <router-link to='/'>Home</router-link>
-                <router-link to="/projects">Projects</router-link>
                 <a href="https://github.com/tomerasulin" target="_blank">
                     <i class="fab fa-github fa-lg fa-fw"></i>
                 </a>
