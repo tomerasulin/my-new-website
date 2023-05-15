@@ -11,10 +11,13 @@
             </div>
             <nav>
                 <router-link to='/'>Home</router-link>
-                <router-link to="/projects">Project</router-link>
-                <router-link to="https://github.com/tomerasulin" target="_blank">
+                <router-link to="/projects">Projects</router-link>
+                <a href="https://github.com/tomerasulin" target="_blank">
                     <i class="fab fa-github fa-lg fa-fw"></i>
-                </router-link>
+                </a>
+                <a href="https://www.linkedin.com/in/tomerasulin/" target="_blank"><i
+                        class="fab fa-linkedin-in fa-lg fa-fw"></i></a>
+                <a href="TomerAsulinCV.pdf" download><i class="fa-solid fa-file"></i></a>
             </nav>
         </header>
         <main class="container">
@@ -249,6 +252,7 @@ a:hover {
     color: #3d5467;
 }
 
+
 .card_custom__button a:hover,
 .btn_load_more:hover {
     cursor: pointer;
@@ -311,7 +315,7 @@ nav a:hover {
 #skills_section h2 {
     margin-left: 180px;
     font-size: 44px;
-    color: #f1edee;
+    color: #db5461;
     line-height: 2rem;
 }
 
@@ -350,5 +354,37 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 2rem 0;
+}
+
+@media screen and (max-width: 475px) {
+    .card {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #skills_section h2 {
+        margin-left: 140px;
+        font-size: 40px;
+    }
+
+    #skills_section ul {
+        margin: 20px 45px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bio__media img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .bio__media__text h1 {
+        font-size: 14px;
+    }
+
+    #skills_section h2 {
+        font-size: 34px;
+        margin-left: 75px;
+    }
 }
 </style>
